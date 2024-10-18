@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Cafe Management System</h1>
+
+    <div class="section">
+        <h2>Place an Order</h2>
+        <input type="text" id="orderCustomerName" placeholder="Customer Name">
+        <input type="text" id="orderItems" placeholder="Items (comma separated)">
+        <input type="number" id="orderTotal" placeholder="Total Amount">
+        <button onclick="placeOrder()">Place Order</button>
+    </div>
+
+    <div class="section">
+        <h2>Orders</h2>
+        <button onclick="fetchOrders()">View Orders</button>
+        <ul id="ordersList"></ul>
+    </div>
+
+    <div class="section">
+        <h2>Table Reservation</h2>
+        <input type="text" id="reservationCustomerName" placeholder="Customer Name">
+        <button onclick="reserveTable()">Reserve Table</button>
+    </div>
+
+    <div class="section">
+        <h2>Reservations</h2>
+        <button onclick="fetchReservations()">View Reservations</button>
+        <ul id="reservationsList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
